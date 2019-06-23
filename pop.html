@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>武汉人口</title>
+    <script type="text/javascript" src="js/echarts.js" ></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://js.arcgis.com/4.11/"></script>
+    <link rel="stylesheet" href="css/pop.css" />
+    <script type="text/javascript" src="js/pop.js" ></script>
+  </head>
+  <body>
+    <div id="applicationDiv">
+    	<div class="panel-side">
+        <h3>武汉市各市区</h3>
+        <ul id="nyc_graphics">     	
+          <li>Loading&hellip;</li>
+        </ul>
+      </div>
+    <div id="viewDiv">
+    </div>
+     <div id="titleDiv" class="esri-widget">武汉2012-2017年各个城区常住人口数变化
+      <div id="info">
+      <span id="name"></span>
+      </div>
+    </div>
+    <div id="sliderContainer" class="esri-widget">
+      <span id="sliderValue"></span>
+      <div id="sliderInnerContainer">
+        <div id="sliderLabels">
+          <span>2012</span>
+          <span>2017</span>
+        </div>
+        <div id="rangeWrapper">
+          <input id="slider" type="range" min="2012" max="2017" step="1"  />
+        </div>
+      </div>
+      <div id="playButton" class="esri-widget esri-widget--button toggle-button">
+        <div>
+          <span class="toggle-button-icon esri-icon-play" aria-label="play icon"></span>Play</div>
+        <div>
+          <span class="toggle-button-icon esri-icon-pause" aria-label="pause icon"></span>Pause</div>
+      </div>
+    </div>
+  </div>
+    <div id="chartPanel1"></div>
+    <div id="chartPanel"><canvas id="chart" class="chart"></canvas></div>
+  </body>
+</html>

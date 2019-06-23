@@ -1,0 +1,186 @@
+  html, body{
+    padding: 0;
+    margin:0;
+    height: 100%;
+    width: 100%;
+  }
+
+    #applicationDiv {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #viewDiv {
+    	padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      flex: 1 1 auto;
+      order: 1;
+    }
+
+    #titleDiv {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.2019rem;
+      padding: 10px;
+      margin-right: 30px;
+    }
+    
+    #sliderContainer {
+      flex: 0 0 80px;
+      order: 2;
+
+      display: flex;
+      flex-flow: row;
+      margin-right: 3px;
+      padding: 0 12px;
+    }
+
+    #sliderValue {
+      flex: 0 0 100px;
+      order: 1;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      font-size: 300%;
+    }
+
+    #sliderInnerContainer {
+      flex: 1 1 auto;
+      order: 2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    #sliderLabels {
+      flex: 1 1 auto;
+      order: 1;
+
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    #rangeWrapper {
+      flex: 1 1 auto;
+      order: 2;
+
+      position: relative;
+      padding: 0 20px;
+    }
+
+    #slider {
+      width: 100%;
+    }
+
+    #playButton {
+      flex: 0 0 100px;
+      order: 3;
+
+      margin: 20px 0;
+    }
+
+    .toggle-button {
+      display: flex;
+    }
+
+    .toggle-button.toggled .toggle-button-icon {
+      color: #CC1B1B;
+    }
+
+    .toggle-button .toggle-button-icon {
+      color: #1BCC1B;
+    }
+
+    .toggle-button> :nth-child(2) {
+      display: none;
+    }
+
+    .toggle-button.toggled> :nth-child(1) {
+      display: none;
+    }
+
+    .toggle-button.toggled> :nth-child(2) {
+      display: block;
+    }
+    .tooltip {
+      position: absolute;
+      pointer-events: none;
+      transition: opacity 200ms;
+    }
+    .tooltip>div {
+      margin: 0 auto;
+      padding: 12px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.75);
+      transform: translate3d(-50%, -125%, 0);
+    }
+    #info {
+      opacity: 0.75;
+      padding: 10px;
+    }
+#chartPanel {
+        background: #fff;
+        padding: 10px;
+        width: 400px;
+        height: 200px;
+      }
+      #chartPanel1 {
+        background: #fff;
+        padding: 10px;
+        width: 450px;
+        height: 300px;
+      }
+       .panel-side {
+        padding: 2px;
+        box-sizing: border-box;
+        width: 300px;
+        height: 50%;
+        position: absolute;
+        top:20%;
+        right: 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.6);
+        overflow: auto;
+        z-index: 60;
+      }
+
+      .panel-side h3 {
+        padding: 0 20px;
+        margin: 20px 0;
+      }
+
+      .panel-side ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .panel-side li {
+        list-style: none;
+        padding: 10px 20px;
+      }
+
+      .panel-result {
+        cursor: pointer;
+        margin: 2px 0;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .panel-result:hover,
+      .panel-result:focus {
+        color: orange;
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+
